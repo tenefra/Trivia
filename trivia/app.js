@@ -20,6 +20,7 @@ retryButton.addEventListener('click', retryGame)
 // SETS CURRENTQUESTIONINDEX FROM UNDEFINED TO ZERO, SETS SCORE AND COUNTER TO ZERO
 function startGame(){
   score = 0
+  document.querySelector('.score-number').innerHTML = score;
   counter = 0
   currentQuestionIndex = 0
   startContainer.classList.add('hide')
