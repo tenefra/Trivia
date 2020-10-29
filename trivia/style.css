@@ -1,0 +1,422 @@
+@import url("https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  background-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 86%,
+    rgba(0, 29, 3, 1) 100%
+  );
+  height: 100vh;
+  margin: 0;
+  overflow: hidden;
+  padding: 2rem;
+  color: white;
+  font-family: "Press Start 2P", cursive;
+  text-shadow: 0 0 5px #c8c8c8;
+}
+body::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: repeating-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.15),
+    rgba(0, 0, 0, 0.15) 1px,
+    transparent 1px,
+    transparent 2px
+  );
+  opacity: 0.5;
+  pointer-events: none;
+}
+
+::selection {
+  background: #0080ff;
+  text-shadow: none;
+}
+pre {
+  margin: 0;
+}
+
+button {
+  font-family: "Press Start 2P", cursive;
+}
+
+h1 {
+  font-size: 2rem;
+  font-family: "Press Start 2P", cursive;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+
+.game h1 {
+  font-size: 1.2rem;
+  text-align: center;
+  line-height: 2.5rem;
+}
+
+h3 {
+  font-size: 1.2rem;
+  font-family: "Press Start 2P", cursive;
+  color: white;
+  margin-bottom: 2rem;
+}
+
+p {
+  line-height: 1rem;
+}
+
+button:focus {
+  outline: none;
+}
+
+.banner-obj h3 {
+  margin-bottom: 0;
+  margin-right: 0.5rem;
+}
+
+.app {
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 1.1rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+}
+
+#final-container {
+  align-items: center;
+  margin-top: 10rem;
+}
+
+#start-container {
+  align-items: center;
+}
+
+.hide {
+  display: none;
+}
+
+.finalscore {
+  opacity: 1;
+  display: flex;
+}
+
+.score-reveal {
+  font-size: 4rem;
+}
+
+.play-btn {
+  font-size: 2.5rem;
+  padding: 1.5rem 0;
+  width: 30rem;
+  text-align: center;
+  margin-bottom: 1rem;
+  border: solid 4px white;
+  border-radius: 4px;
+  background: #000;
+  color: white;
+  text-decoration: none;
+  border-image-slice: 3;
+  border-image-width: 3;
+  border-image-repeat: stretch;
+  border-image-source: url(./svg/box.svg);
+  border-image-outset: 2;
+}
+
+.play-btn:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  border: #fff;
+  transition: background 0.5s ease, transform 150ms ease-in;
+  transform: scale(1.03);
+}
+
+.play-btn[disabled]:hover {
+  cursor: not-allowed;
+  transform: none;
+}
+
+.retry-btn {
+  font-size: 2.5rem;
+  padding: 1.5rem 0;
+  width: 30rem;
+  text-align: center;
+  margin: 2.5rem 0;
+  border: solid 4px white;
+  border-radius: 4px;
+  background: #000;
+  color: white;
+  text-decoration: none;
+  border-image-slice: 3;
+  border-image-width: 3;
+  border-image-repeat: stretch;
+  border-image-source: url(./svg/box.svg);
+  border-image-outset: 2;
+}
+
+.retry-btn:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #000;
+  border: #fff;
+  transition: background 0.5s ease, transform 150ms ease-in;
+  transform: scale(1.03);
+}
+
+.retry-btn[disabled]:hover {
+  cursor: not-allowed;
+  transform: none;
+}
+
+.rules-box {
+  max-width: 50rem;
+  border: solid 5px white;
+  padding: 2rem;
+  margin-bottom: 2rem;
+  border-image-slice: 3;
+  border-image-width: 3;
+  border-image-repeat: stretch;
+  border-image-source: url(./svg/box.svg);
+  border-image-outset: 2;
+}
+
+.rules-box h3 {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.rules-box p {
+  line-height: 2rem;
+}
+
+.question-block {
+  position: absolute;
+  margin: 0 auto;
+  margin-top: -40vh;
+  max-width: 50rem;
+}
+
+.question {
+  margin: 3rem 0 2rem 0;
+}
+
+.answer-container {
+  display: flex;
+  margin-bottom: 1rem;
+  width: 100%;
+  max-width: 50rem;
+  min-width: 50rem;
+  background: #000;
+  color: #fff;
+  border: 3px solid #fff;
+  border-radius: 5px;
+  font-size: 1.2rem;
+  padding: 1.5rem 2rem;
+  border-image-slice: 3;
+  border-image-width: 3;
+  border-image-repeat: stretch;
+  border-image-source: url(./svg/box.svg);
+  border-image-outset: 2;
+}
+
+.answer-container:hover {
+  cursor: pointer;
+  /* background: #555638;
+  transition: background 0.5s ease; */
+}
+
+.answer-block {
+  margin: 0 auto;
+  margin-top: 20vh;
+}
+
+.banner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.score-title {
+  text-align: center;
+  font-size: 2rem;
+}
+
+.score-number {
+  font-size: 2.5rem !important;
+  margin: 1rem;
+}
+
+.timer {
+  width: 35rem;
+  height: 3rem;
+  border: 0.2rem solid white;
+  overflow: hidden;
+  border-image-slice: 3;
+  border-image-width: 2;
+  border-image-repeat: stretch;
+  border-image-source: url(./svg/box.svg);
+  border-image-outset: 2;
+}
+
+.timer-bar-full {
+  width: 100%;
+  height: 3rem;
+  background-color: rgb(11, 223, 36);
+  text-align: center;
+  line-height: 40px;
+  color: white;
+  font-size: 2rem;
+}
+
+.correct {
+  background: rgb(11, 223, 36);
+}
+
+.incorrect {
+  background: red;
+}
+
+.timer-yellow {
+  background-color: yellow;
+}
+
+.timer-red {
+  background-color: red;
+}
+
+.timer-green {
+  background-color: rgb(11, 223, 36);
+}
+
+header h1 {
+  margin: 50px 0px 30px 0px;
+  text-align: center;
+  font-size: 40px;
+}
+
+header p {
+  font-size: 20px;
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}
+.blink {
+  animation: blink 1s step-start 0s infinite;
+  -webkit-animation: blink 1s step-start 0s infinite;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  body {
+    overflow: auto;
+  }
+
+  h1 {
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    line-height: 1.8rem;
+  }
+
+  .app {
+    width: auto;
+  }
+
+  .play-btn {
+    width: 19rem;
+  }
+
+  .retry-btn {
+    width: 19rem;
+  }
+
+  .game {
+    width: 100%;
+  }
+
+  .answer-container {
+    min-width: 16rem;
+    max-width: 20rem;
+  }
+
+  .timer {
+    width: 7rem;
+    height: 3rem;
+  }
+
+  .question-block {
+    min-width: 16rem;
+    max-width: 20rem;
+  }
+
+  .score-title {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .score-number h1 {
+    font-size: 1rem;
+  }
+
+  .game h1 {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .score-reveal {
+    padding: 2rem 0;
+  }
+
+  .sassytext {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  #start-container {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  #final-container {
+    align-items: center;
+    margin-top: 2rem;
+  }
+}
+
+@media (min-width: 480px) and (max-width: 768px) {
+  .answer-container {
+    min-width: 40rem;
+  }
+}

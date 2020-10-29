@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Tandem Trivia</title>
+  </head>
+  <body>
+    <div class="app">
+      
+      <div id='start-container' class="start flex-column flex-center">
+        <h1>Welcome to Tandem Trivia!</h1>
+        <h3>How much do you really know about Tandem?</h3>
+        <div class="rules-box">
+          
+            <h3><u>RULES</u></h3>
+            <p>- Each round of Tandem Trivia has 10 questions.</p><br>
+            <p>- You have 10 seconds to answer each question. This is measured by the countdown bar.</p><br>
+            <p>- To select an answer, simply click the answer.</p>
+          
+        </div>
+        <button class='play-btn'>Play!</button>
+      </div>
+    
+      
+      <div class="game flex-column flex-center hide">
+        <div class="banner">
+          <div class="banner-obj">
+            <h3 class="score-title"><u>Score</u></h3>
+            <h1 class='score-number'>0</h1>
+          </div>
+            <div class="banner-obj">
+              <div class="timer">
+                <div class="timer-bar-full">
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="question-block">
+            <h1 class="question">Question goes here, answers go below.</h1>
+          </div>
+          <div class="answer-block">
+            <button class="answer-container">
+              <p class='answer-number'>1</p>
+              <p class='answer-input' data-number='1'>Choice 1</p>
+            </button>
+            <button class="answer-container">
+              <p class='answer-number'>2</p>
+              <p class='answer-input' data-number='2'>Choice 2</p>
+            </button>
+            <button class="answer-container">
+              <p class='answer-number'>3</p>
+              <p class='answer-input' data-number='3'>Choice 3</p>
+            </button>
+            <button class="answer-container">
+              <p class='answer-number'>4</p>
+              <p class='answer-input' data-number='4'>Choice 4</p>
+            </button>
+        </div>
+        </div>
+
+        <div id='final-container' class="final flex-column flex-center hide">
+          <h1><span id="demo"></span><span class="blink hide">.</span></h1>
+          <h1 class="score-reveal hide"><span class='final-score'>0</span>/10</h1>
+          <p class="sassytext hide"></p>
+          <button class='retry-btn hide'>Try Again!</button>
+
+        </div>
+       
+      
+      </div>
+      
+      
+      </div>
+    </div>
+    <script src="./app.js"></script>
+  </body>
+</html>
