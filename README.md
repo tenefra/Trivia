@@ -23,7 +23,7 @@ Want to play another round? Press the replay button and you'll start a brand new
 
 In the future I would like to add a 2 player mode that allows coworkers to face off while taking a break from work, instead of on their respective computers, just to add to the feeling of friendly competition you get from trivia.
 
-I also have plans to recreate this app in React. Currently I'm polishing my vanilla JS skills and plan to transfer into React development within the next month. In that case functionality will be improved and 2 player mode will be available.
+I also have plans to recreate this app in React. Currently I'm polishing my Vanilla JS skills and plan to transfer into React development within the next month. In that case functionality will be improved and 2 player mode will be available.
 
 Scott Tenefrancia – stenefra@gmail.com
 
