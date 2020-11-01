@@ -5,29 +5,21 @@
 
 This project was created as part of the 2020 Tandem Apprenticeship coding challenge -- but it's true purpose is to test our trivia knowledge, and most importantly, to have fun!
 
-![](header.png)
+![](https://user-images.githubusercontent.com/54250471/97815953-ceaf5500-1c5f-11eb-9005-aa161cd358fb.png)
 
-## Usage example
+## Usage
 
-A few motivating and useful examples of how your product can be used. Spice this up with code blocks and potentially more screenshots.
+This quiz is a super compact, easy to use app that will bring you back to the days of NES gaming! Development of this quiz I had one thing in mind, why do people play triva? The answer is that it's fun - it's a friendly environment to be competitive.
 
-_For more examples and usage, please refer to the [Wiki][wiki]._
+![](https://user-images.githubusercontent.com/54250471/97810699-dc56e180-1c43-11eb-96b4-068151c5c06b.png)
 
-## Development setup
+Developed simply with Vanilla JavaScript, the player will be pitched a random assortment of 10 trivia questions, and will have 10 seconds to answer reach question. At the end of each round, the score will be tallied and the player will be greated with a snarky, or complimenting comment depending on their score.
 
-Describe how to install all development dependencies and how to run an automated test-suite of some kind. Potentially do this for multiple platforms.
+![](https://user-images.githubusercontent.com/54250471/97816141-1b476000-1c61-11eb-8691-cac37ef4759c.png)
 
-```sh
-make install
-npm test
-```
+Want to play another round? Press the replay button and you'll start a brand new round with a brand new score!
 
+Scott Tenefrancia – stenefra@gmail.com
 
-## Meta
-
-Your Name – [@YourTwitter](https://twitter.com/dbader_org) – YourEmail@example.com
-
-Distributed under the XYZ license. See ``LICENSE`` for more information.
-
-[https://github.com/yourname/github-link](https://github.com/dbader/)
+[https://github.com/tenefra](https://github.com/tenefra)
 
