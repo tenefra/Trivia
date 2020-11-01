@@ -298,6 +298,12 @@ button:focus {
   background: red;
 }
 
+.sassytext {
+  line-height: 2rem;
+  max-width: 50rem;
+  text-align: center;
+}
+
 .timer-yellow {
   background-color: yellow;
 }
@@ -380,6 +386,14 @@ header p {
     max-width: 20rem;
   }
 
+  .question {
+    max-width: 17rem;
+  }
+
+  .answer-block {
+    margin-top: 25vh;
+  }
+
   .score-title {
     text-align: center;
     font-size: 1rem;
@@ -412,11 +426,106 @@ header p {
   #final-container {
     align-items: center;
     margin-top: 2rem;
+    text-align: center;
   }
 }
 
 @media (min-width: 480px) and (max-width: 768px) {
+  body {
+    overflow: auto;
+  }
+
+  h1 {
+    line-height: 2.6rem;
+    margin-bottom: 1rem;
+  }
+
+  h3 {
+    line-height: 1.8rem;
+  }
+
+  .app {
+    width: auto;
+  }
+
+  .play-btn {
+    width: 19rem;
+  }
+
+  .retry-btn {
+    width: 19rem;
+  }
+
+  .game {
+    width: 100%;
+  }
+
   .answer-container {
+    min-width: 30rem;
+    max-width: 40rem;
+  }
+
+  .timer {
+    width: 20rem;
+    height: 3rem;
+  }
+
+  .question-block {
+    min-width: 16rem;
+    max-width: 20rem;
+  }
+
+  .question {
+    max-width: 30rem;
     min-width: 40rem;
+  }
+
+  .answer-block {
+    margin-top: 25vh;
+  }
+
+  .score-title {
+    text-align: center;
+    font-size: 1rem;
+  }
+
+  .score-number h1 {
+    font-size: 1rem;
+  }
+
+  .game h1 {
+    font-size: 1rem;
+    line-height: 2rem;
+  }
+
+  .score-reveal {
+    padding: 2rem 0;
+  }
+
+  .sassytext {
+    font-size: 1.2rem;
+    line-height: 2rem;
+  }
+
+  #start-container {
+    align-items: center;
+    width: 100%;
+    text-align: center;
+  }
+
+  #final-container {
+    align-items: center;
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+
+@media (min-width: 1024px) and (max-width: 1200px) {
+  .play-btn {
+    padding: 1.3rem 0;
+  }
+
+  .rules-box {
+    padding: 1.4rem;
   }
 }
