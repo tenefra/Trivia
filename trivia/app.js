@@ -70,6 +70,7 @@ function selectAnswer(e){
   if (selectedButton.dataset = correct) {
     score++
  }
+ remove(timerBar.firstChild)
   counter++
   if (counter > 9) {
     setTimeout(showFinalScore, 1000)
@@ -95,7 +96,7 @@ function setStatusClass(element, correct){
 // WILL THEN INVOKE setNextQuestion OR showFinalScore DEPENDING ON PARAMETERS
 let timer = 0;
 function countdown() {
-  if (timer == 0) {
+  if (timer >= 0) {
     timer = 100
     const timerBar = document.querySelector(".timer-bar-full")
     let width = 100
@@ -133,6 +134,9 @@ function countdown() {
         }
         else if (width < 40){
           timerYellow()
+        }
+        else if (width > 40) {
+          timerGreen()
         }
       }
     }
@@ -396,12 +400,4 @@ const questions = [
       {text: "Purchase indulgences", correct: false}
     ]
   }
-]
-
-
-
-
-
-
-
-  
+]  
